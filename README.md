@@ -8,7 +8,7 @@ Prints a label using Fluid.
 
 
 ```cs
-using ZPLPrinter;
+using StripedPrinter;
 
 var template = "^XA^FO50,50^ADN,36,20^FD{{Name}}^FS^XZ";
 var model = new { Name = "Hello World" };
@@ -21,7 +21,7 @@ printer.Print(label);
 Prints a simple label without using Fluid.
 
 ```cs
-using ZPLPrinter;
+using StripedPrinter;
 
 var template = "^XA^FO50,50^ADN,36,20^FDHello World^FS^XZ";
 var label = new ZPLLabel(template);
